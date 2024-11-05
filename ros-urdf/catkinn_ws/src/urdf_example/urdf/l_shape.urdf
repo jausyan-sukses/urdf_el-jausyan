@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot name="l_shape">
+
+  <!-- Link pertama: bagian vertikal huruf "L" -->
+  <link name="vertical">
+    <visual>
+      <geometry>
+        <box size="0.1 0.2 0.1"/> <!-- Dimensi persegi panjang -->
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/> <!-- Warna biru -->
+      </material>
+    </visual>
+  </link>
+
+  <!-- Link kedua: bagian horizontal huruf "L" -->
+  <link name="horizontal">
+    <visual>
+      <geometry>
+        <box size="0.2 0.1 0.1"/> <!-- Dimensi persegi panjang -->
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/> <!-- Warna biru -->
+      </material>
+    </visual>
+  </link>
+
+  <!-- Joint antara link vertikal dan horizontal -->
+  <joint name="joint_vertical_horizontal" type="fixed">
+    <parent link="vertical"/>
+    <child link="horizontal"/>
+    <origin xyz="0 0.1 0" rpy="0 0 0"/> <!-- Posisi dan orientasi -->
+  </joint>
+
+</robot>

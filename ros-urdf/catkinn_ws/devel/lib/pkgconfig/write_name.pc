@@ -1,0 +1,8 @@
+prefix=/home/el-jausyan/catkinn_ws/devel
+
+Name: write_name
+Description: Description of write_name
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

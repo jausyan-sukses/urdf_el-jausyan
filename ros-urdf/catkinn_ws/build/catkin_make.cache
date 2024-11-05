@@ -1,0 +1,2 @@
+urdf_example:write_name
+-DCATKIN_DEVEL_PREFIX=/home/el-jausyan/catkinn_ws/devel -DCMAKE_INSTALL_PREFIX=/home/el-jausyan/catkinn_ws/install -G Unix Makefiles

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<robot name="writing_robot">
+
+    <!-- Definisi Material -->
+    <material name="silver">
+        <color rgba="0.75 0.75 0.75 1"/>
+    </material>
+
+    <!-- Link Base -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.05" radius="0.1"/>
+            </geometry>
+            <material name="silver"/>
+        </visual>
+    </link>
+
+    <!-- Link Arm -->
+    <link name="arm_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.3" radius="0.02"/>
+            </geometry>
+            <material name="silver"/>
+        </visual>
+    </link>
+
+    <!-- End Effector -->
+    <link name="end_effector">
+        <visual>
+            <geometry>
+                <sphere radius="0.02"/>
+            </geometry>
+            <material name="silver"/>
+        </visual>
+    </link>
+
+    <!-- Define Joints Here -->
+
+</robot>
+
